@@ -63,7 +63,7 @@ export default {
       options: ["First Name", "Last Name", "Address", "Birth Date (MM.DD.YYYY)", "Email"],
       inputs: [null, null, null, null, null, null, null],
       prodNumber: 1,
-      rates: [0, 0, 0],
+      rates: [22.11, 23.70, 26.74],
       selectedRate: 0
     };
   },
@@ -84,10 +84,6 @@ export default {
       bool ? this.prodNumber++ : this.prodNumber--;
     },
     send(){
-      console.log(this.inputs.includes(null))
-      console.log(!this.dateCheck(this.inputs[3]));
-      console.log(this.prodNumber == 0)
-      console.log(!this.emailCheck(this.inputs[4]))
       if (this.inputs.includes(null) || !this.dateCheck(this.inputs[3]) || this.prodNumber == 0  || !this.emailCheck(this.inputs[4])) {
         alert('Incorrect input in input field')
       }
