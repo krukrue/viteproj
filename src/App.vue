@@ -63,7 +63,7 @@ export default {
       options: ["First Name", "Last Name", "Address", "Birth Date (MM.DD.YYYY)", "Email"],
       inputs: [null, null, null, null, null, null, null],
       prodNumber: 1,
-      rates: [22.11, 23.70, 26.74],
+      rates: [0.045, 0.042, 0.037],
       selectedRate: 0
     };
   },
